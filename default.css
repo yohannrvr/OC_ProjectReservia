@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 
+
 body{
   font-family: 'Raleway', sans-serif;
   display: flex;
@@ -8,6 +9,10 @@ body{
   margin-top: auto;
   flex-direction: column; 
   align-items: center;
+  --primary-color: #0065FC;
+  --secondary-color: #DEEBFF;
+  --tertiary-color: #F2F2F2;
+  --tertiary-color-bis: #d9d9d9
 }
 
 li {
@@ -33,7 +38,6 @@ a{
   display: grid;
   align-items: center;
   max-width: 1850px;
-  /* margin: auto; */
 }
 
 
@@ -61,13 +65,13 @@ nav a{
 }
 
 .link[data-active=True]{
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
+  color: var(--primary-color);
+  border-top: 3px solid var(--primary-color);
   font-weight: bold;
 }
 
 .link:hover{
-  color: #0065FC;
+  color: var(--primary-color);
 }
 
 
@@ -76,7 +80,7 @@ nav a{
   align-items: center;
   grid-area: button;
   padding: 2rem;
-  color: #0065FC;
+  color: var(--primary-color);
   font-weight: bolder;
 }
 
@@ -92,11 +96,11 @@ nav a{
       
   }
   .link[data-active=True] {
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid var(--primary-color);
      
   }
   .link:hover {
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid var(--primary-color);
   }
 }
 
@@ -117,17 +121,17 @@ nav a{
   }
   .link {
     border-top: none;
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 3px solid var(--tertiary-color);
     width: 50%;
   }
 
   .link[data-active=True] {
-    border-bottom-color: #0065FC;
+    border-bottom-color: var(--primary-color);
     border-top: none;
   }
 
   .link:hover {
-    border-bottom-color: #0065FC;
+    border-bottom-color: var(--primary-color);
     border-top: none;
   }
 }
@@ -158,7 +162,7 @@ nav a{
 }
 
 .searchicon{
-  background-color: #F2F2F2;
+  background-color: var(--tertiary-color);
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
@@ -167,8 +171,8 @@ nav a{
 .searchinput{
   border-right: none;
   border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
+  border-top: var(--tertiary-color) 1px solid;
+  border-bottom: var(--tertiary-color) 1px solid;
   padding: 0 1.5rem;
   box-sizing: border-box;
   width: 16rem;
@@ -183,7 +187,7 @@ nav a{
 }
 
 .searchButton{
-    background-color: #0065FC;
+    background-color: var(--primary-color);
     color: white;
     font-weight: bold;
     border: none;
@@ -210,7 +214,7 @@ nav a{
     display: flex;
     align-items: center;
     margin-right: 2rem;
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--tertiary-color-bis);
     border-radius: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -227,7 +231,7 @@ nav a{
 }
 
 .filterIcon{
-    background-color: #DEEBFF;
+    background-color: var(--secondary-color);
     border-radius: 100%;
     height: 3rem;
     width: 3rem;
@@ -258,7 +262,7 @@ nav a{
     width: 2rem;
     min-height: 2rem;
     min-width: 2rem;
-    border: solid 1px #d9d9d9;
+    border: solid 1px var(--tertiary-color-bis);
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -267,7 +271,7 @@ nav a{
 }
 
 .Iconresult{
-    color: #0065FC;
+    color: var(--primary-color);
 }
 
 
@@ -323,7 +327,7 @@ nav a{
 }
 
 .rentalMain{
-    background-color: #F2F2F2;
+    background-color: var(--tertiary-color);
     border-radius: 1.5rem;
     padding: 2rem;
 }
@@ -396,10 +400,10 @@ nav a{
     margin: 0 0 0.25rem 0;
 }
 .rentalStar[data-active=true]{
-    color: #0065FC;
+    color: var(--primary-color);
 }
 .rentalStar[data-active=false]{
-    color: #d9d9d9;
+    color: var(--tertiary-color-bis);
 }
 
 .viewMore{
@@ -446,7 +450,7 @@ nav a{
 
 
 .popular{
-    background-color: #F2F2F2;
+    background-color: var(--tertiary-color);
     border-radius: 1.5rem;
     padding: 2rem;
 }
@@ -504,7 +508,7 @@ nav a{
 }
 
 .popularStar{
-    color: #0065FC;
+    color: var(--primary-color);
     
 }
 
@@ -513,10 +517,10 @@ nav a{
 }
 
 .popularStar[data-active=true]{
-    color: #0065fc;
+    color: var(--primary-color);
 }
 .popularStar[data-active=false]{
-    color: #d9d9d9;
+    color: var(--tertiary-color-bis);
 }
 
 
@@ -612,7 +616,7 @@ nav a{
 
 
 .footer {
-  background-color: #F2F2F2;
+  background-color: var(--tertiary-color);
   width: 100%;
   margin: auto;
   }

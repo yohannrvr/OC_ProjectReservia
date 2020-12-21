@@ -18,4 +18,7 @@ Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBF
 La police du site est Raleway.
 
 # Preview du site
-iMac_mockup mockup_iphone Mockup_Reservia
+![iMac_mockup](https://user-images.githubusercontent.com/74589235/102056791-30311a80-3ded-11eb-8c13-2742f5445bb6.png)
+![mockup_iphone](https://user-images.githubusercontent.com/74589235/102056823-3e7f3680-3ded-11eb-9211-1b76051c8af8.png)
+![Mockup_Reservia](https://user-images.githubusercontent.com/74589235/102056828-40e19080-3ded-11eb-83dd-3ba4ea75fa60.png)
+

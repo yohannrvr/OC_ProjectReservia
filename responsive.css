@@ -1,0 +1,207 @@
+/* RESPONSIVE HEADER */
+
+@media screen and (min-width: 601px) {
+    .header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+      
+        
+    }
+    .link[data-active=True] {
+      border-top: 3px solid var(--primary-color);
+       
+    }
+    .link:hover {
+      border-top: 3px solid var(--primary-color);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" "navbar navbar navbar";
+      
+    }
+    .logo {
+      order: 0;
+    }
+    .signup {
+      order: 1;
+    }
+    .headerNav {
+      order: 2;
+    }
+    .link {
+      border-top: none;
+      border-bottom: 3px solid var(--tertiary-color);
+      width: 50%;
+    }
+  
+    .link[data-active=True] {
+      border-bottom-color: var(--primary-color);
+      border-top: none;
+    }
+  
+    .link:hover {
+      border-bottom-color: var(--primary-color);
+      border-top: none;
+    }
+  }
+
+
+
+/* SEARCH RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    .search {
+      display: flex;
+      width: 100%;
+    }
+    .searchinput {
+      flex: 1;
+    }
+    .searchText {
+      display: none;
+    }
+    .searchButtonIcon {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .filterTitle {
+      width: 100%;
+    }
+    .filterBox {
+      margin-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 601px) {
+    .searchText {
+      display: block;
+    }
+    .searchButtonIcon {
+      display: none !important;
+    }
+}
+
+
+/* MAIN RESPONSIVE */
+
+@media (max-width: 1440px) {
+    .rental {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      }
+    .popular {
+      grid-template-rows: auto 10rem;
+      column-gap: 2rem;
+      grid-row-start: 1;
+    }
+    .popularTitle {
+      grid-column: 1/-1;
+      }
+  }
+  @media (min-width: 925px) {
+    .rentalMain {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 925px) and (min-width: 650px) {
+    .rentalMain {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 650px) {
+    .rentalMain {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 1000px) {
+      .popular {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 9rem);
+      }
+  }
+  
+
+/* ACTIVITY RESPONSIVE */
+
+@media (min-width: 1100px) {
+    .activity {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    }
+    .activityFirst {
+      grid-row: 2/7;
+      grid-column: 1/2;
+    }
+    .activitySecond {
+      grid-column: 2/3;
+      grid-row: 2/5;
+    }
+    .activityFourth {
+      grid-column: 3/4;
+      grid-row: 2/7;
+    }
+    .activityFifth {
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+    .activityThird {
+      grid-column: 2/3;
+      grid-row: 6/7;
+    }
+    .activitySixth {
+      grid-column: 4/5;
+      grid-row: 4/7;
+    }
+  }
+  
+  
+  @media (max-width: 1100px) {
+    .activity {
+      row-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 12rem 12rem;
+    }
+  }
+  @media (max-width: 925px) {
+    .activity {
+      row-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto 12rem 12rem 12rem;
+    }
+  }
+  @media (max-width: 650px) {
+    .activity {
+      row-gap: 2rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+    }
+  }
+  
+/* FOOTER RESPONSIVE */
+
+@media (max-width: 750px) {
+    .footerColumn {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .footerColumnColumn {
+      width: 100%;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .footerColumnColumn:first-child {
+      margin-top: 0;
+    }
+    .footerColumnColumn:last-child {
+      margin-bottom: 0;
+    }
+    .footerColumnTitle {
+      margin: 0;
+    }
+    .footerColumnLink:last-child {
+      margin-bottom: 0;
+    }
+  }

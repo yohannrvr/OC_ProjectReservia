@@ -87,7 +87,7 @@
 
 /* MAIN RESPONSIVE */
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .rental {
       grid-template-columns: 1fr;
       row-gap: 2rem;

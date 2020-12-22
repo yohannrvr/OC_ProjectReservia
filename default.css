@@ -6,13 +6,17 @@ body{
   font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin: 0;
   flex-direction: column; 
   align-items: center;
   --primary-color: #0065FC;
   --secondary-color: #DEEBFF;
   --tertiary-color: #F2F2F2;
   --tertiary-color-bis: #d9d9d9
+}
+
+h3{
+    font-size: 17px;
 }
 
 li {
@@ -474,4 +478,3 @@ nav a{
 .footerColumnLink:hover {
   text-decoration: underline;
 }
-
